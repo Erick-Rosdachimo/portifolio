@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="portifolio.css" />
+
+    <link rel="stylesheet" href="icomoon/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Portifolio</title>
+  </head>
+  <body>
+    <main>
+      <section id="info">
+        <div class="cards titulo">
+          <img src="assets/perfil.webp" alt="" />
+          <h1>Erick Rosdachimo</h1>
+          <p class="text-light">Desenvolvedor Front-end</p>
+        </div>
+        <div class="cards informacoes">
+          <div class="corpo-card">
+            <div class="box-icon">
+              <div class="icon"></div>
+              <i class="icon-map-pin"></i>
+              <p class="text-medio">Brasil</p>
+            </div>
+            <div class="box-icon">
+              <i class="icon-linkedin"></i>
+              <a href="" class="text-medio">Érick Rosdachimo</a>
+            </div>
+            <div class="box-icon">
+              <i class="icon-github"></i>
+              <a href="" class="text-medio">Erick-rosdachimo</a>
+            </div>
+            <div class="box-icon">
+              <i class="icon-mail"></i>
+              <a href="" class="text-medio">erickrosdachimoribeiro@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="cards tecnologias">
+          <h2>Tecnologias</h2>
+          <div class="box-techs">
+            <div class="icone-tec">
+              <p>Javascript</p>
+            </div>
+            <div class="icone-tec">
+              <p>HTML</p>
+            </div>
+            <div class="icone-tec">
+              <p>CSS</p>
+            </div>
+            <div class="icone-tec">
+              <p>Git</p>
+            </div>
+            <div class="icone-tec">
+              <p>Github</p>
+            </div>
+          </div>
+        </div>
+        <div class="cards">
+          <h2>Experiências</h2>
+          <div class="corpo-card">
+            <p>Sem experiência</p>
+          </div>
+        </div>
+        <div class="cards">
+          <h2>Educação</h2>
+          <div class="corpo-card">
+            <ul>
+              <li>
+                <p class="destaque">Senac</p>
+                <br />
+                <p class="text-light">Setembro/2021 - Dezembro/2021</p>
+                <br />
+                <p class="text-medio">
+                  Design de plataformas digitais e experiência do usuario
+                </p>
+              </li>
+              <li>
+                <p class="destaque">E.E Arlindo Bittencourt Prof.</p>
+                <br />
+                <p class="text-light">2021 - atualmente</p>
+                <br />
+                <p class="text-medio">Ensino medio</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <header class="cards">
+          <h2>Meus projetos</h2>
+        </header>
+        <div class="projetos-box">
+          <div class="projeto cards">
+            <p class="destaque">Rosdachef</p>
+            <img src="assets/rosdachef.png" alt="" />
+            <div class="sobre-box">
+              <button onclick="leiamais" class="accordion">
+                <p class="destaque">Sobre</p>
+              </button>
+              <div class="panel">
+                <p>
+                  Este projeto é uma versão em HTML CSS e JS de um projeto
+                  antigo no wordpress que eu já tinha feito, então o design ja
+                  esta quase pronto mas vou mudar algumas coisas e ir colocando
+                  novos elementos de acordo com oque eu estiver estudando
+                  <br /><br />
+                  O projeto é um site para restaurante, com rseservas menu,
+                  contato e a home. <br /><br />
+                  Projeto original:
+                  <a class="destaque" href="http://duxdino.rf.gd/">Rosdachef</a>
+                  ( não concluido )
+                </p>
+              </div>
+              <div class="box-btn">
+                <a
+                  target="blank"
+                  href="https://github.com/Erick-Rosdachimo/rosdachef"
+                  class="btn"
+                  >Github</a
+                >
+                <a
+                  target="blank"
+                  href="https://erick-rosdachimo.github.io/rosdachef"
+                  class="btn"
+                  >Ver Projeto</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="projeto cards">
+            <p class="destaque">Rocket Coffee</p>
+            <img src="rocket-coffee/rocket-coffee.png" alt="" />
+            <div class="sobre-box">
+              <button onclick="leiamais" class="accordion">
+                <p class="destaque">Sobre</p>
+              </button>
+              <div class="panel">
+                <p>
+                  Desafio do discover da rocketseat, homepage para marca de café
+                  <br />
+                  homepage responsiva e com hover bem interessante
+                </p>
+              </div>
+              <div class="box-btn">
+                <a
+                  target="blank"
+                  href="https://github.com/Erick-Rosdachimo/portifolio/tree/main/rocket-coffee"
+                  class="btn"
+                  >Github</a
+                >
+                <a target="blank" href="rocket-coffee/rocket.html" class="btn"
+                  >Ver Projeto</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="main.js"></script>
+      </section>
+    </main>
+  </body>
+</html>
