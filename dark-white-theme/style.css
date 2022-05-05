@@ -1,0 +1,154 @@
+* {
+  font-family: 'Open Sans', serif;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+body.light {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+body.dark {
+  background-color: black;
+  color: white;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  transition: 0.7s;
+}
+
+header {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 50vw;
+  transform: translateX(-50%);
+}
+
+header .box-header {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  justify-content: center;
+}
+
+#box {
+  margin: 0 25px;
+  height: 30px;
+  width: 70px;
+  border-radius: 37px;
+  position: relative;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.light #box {
+  border: 2px solid black;
+}
+
+.dark #box {
+  border: 2px solid white;
+}
+
+.bola {
+  border-radius: 100px;
+  position: absolute;
+  top: 1px;
+  transition: 0.4s linear;
+  height: 24px;
+  width: 24px;
+}
+
+.light .bola {
+  background-color: black;
+  left: 1px;
+
+  transform: translateX(0px);
+}
+
+.dark .bola {
+  background-color: rgb(255, 255, 255);
+
+  transform: translate(40px);
+}
+
+span {
+  font-size: 20px;
+  font-weight: 600;
+
+  transition: 0.4s;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 50vw;
+  transform: translateX(-50%);
+  height: 40px;
+  width: 100vw;
+}
+
+footer h1 {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  transition: 0.4s;
+}
+
+a {
+  color: rgb(128, 128, 128);
+}
+
+main {
+  padding-top: 140px;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.light .icon-sunn {
+  height: 60px;
+  width: 60px;
+  background-color: rgb(255, 204, 0);
+  box-shadow: 0px 0px 8px 15px rgba(255, 204, 0, 0.527);
+  border-radius: 100px;
+  transform: translateX(0px);
+  position: absolute;
+  left: 80px;
+  transition: 2s;
+}
+
+.dark .icon-sunn {
+  height: 60px;
+  width: 60px;
+  background-color: rgba(255, 204, 0, 0.199);
+  box-shadow: 0px 0px 8px 15px rgba(255, 204, 0, 0.076);
+  border-radius: 100px;
+  transform: translateX(-160px);
+  left: 80px;
+  position: absolute;
+  transition: 2s;
+}
+
+.light .icon-moon-fill {
+  font-size: 55px;
+  color: rgba(250, 235, 150, 0.486);
+  position: absolute;
+  right: 100px;
+  transform: translateX(160px);
+  transition: 2s;
+}
+
+.dark .icon-moon-fill {
+  font-size: 55px;
+  color: rgb(250, 235, 150);
+  position: absolute;
+  transform: translateX(0px);
+  right: 100px;
+  transition: 2s;
+}
