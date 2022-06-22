@@ -99,7 +99,7 @@
               <li>
                 <p class="destaque">E.E Arlindo Bittencourt Prof.</p>
                 <br />
-                <p class="text-light">2021 - atualmente</p>
+                <p class="text-light">2021 - 2023 Previsão de termino</p>
                 <br />
                 <p class="text-medio">Ensino medio</p>
               </li>
@@ -194,7 +194,13 @@
                 <p class="destaque">Sobre</p>
               </button>
               <div class="panel">
-                <p>layout simples com botão para mudar a cor do tema.</p>
+                <p>
+                  Layout básico que muda o tema da página junto com uma animação
+                  para aparecer o sol no tema claro e a lua no tema escuro.
+                  <br /><br />
+                  Neste projeto utilizei o JS, tendo um simples código para
+                  mudar a classe do body.
+                </p>
               </div>
               <div class="box-btn">
                 <a
@@ -223,8 +229,34 @@
               </button>
               <div class="panel">
                 <p>
+                  <strong>Introdução</strong><br />
+                  <br />
                   Este projeto é uma calculadora que apliquei alguns novos
                   conhecimentos em JS e fortaleci o HTML e CSS.
+                  <br /><br /><strong>Detalhes</strong><br /><br />
+                  Utilizei na estilização CSS grid e gradiente de background, no
+                  script utilizei funções chamadas por eventos de clique nos
+                  botões, sendo dos botões de número passado o número clicado
+                  como parâmetro. <br />
+                  Os de operações adicionei a operação pra mais tarde ser
+                  cálculada. <br />
+                  Na hora do cálculo utilizei a função nativa eval, porém
+                  troquei os símbolos multiplicação e divisão, de forma que
+                  fique mais próxima do comum para o usuario através da função
+                  replace que recebe o valor digitado até o momento e troca
+                  todos os caracteres X por * e armazenando o valor numa
+                  variável, após isto vai novamente à uma função replace que
+                  desta vez pega o valor obtido do replace anterior e troca o ÷
+                  por /, assim permitindo o cálculo normalmente e a visualização
+                  desejada do símbolo para o usuário. <br />
+                  Na função Del, utilizei o substring, que inicia no primeiro
+                  caractere (index 0) e termina no penúltimo caractere (total de
+                  letras digitadas -1), retornando os caracteres selecionados.
+                  <br /><br />
+                  <strong>Observações</strong><br /><br />
+                  Na próxima atualização farei com que não seja possível o
+                  usuário digitar dois sínais seguidos de forma que de erro no
+                  cálculo.
                 </p>
               </div>
               <div class="box-btn">
@@ -279,6 +311,41 @@
                 <a
                   target="_blank"
                   href="https://erick-rosdachimo.github.io/faq-accordion"
+                  class="btn"
+                  >Ver Projeto</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- TASK LIST -->
+          <div class="projeto cards">
+            <p class="destaque">Task list</p>
+            <img src="assets/projects-img/task-list.png" alt="" />
+            <div class="sobre-box">
+              <button onclick="leiamais" class="accordion">
+                <p class="destaque">Sobre</p>
+              </button>
+              <div class="panel">
+                <p>
+                  Lista de tarefas para organizar o dia a dia, com funções para
+                  adicionar, deletar e concluir. <br /><br />
+                  Neste projeto desenvolvi habilidades de criação de elementos,
+                  atribuição de classes e remoção de elementos por js, além de
+                  utilizar arrow functions. <br /><br />
+                  Observações Em breve farei uma atualização as tarefas ficarem
+                  salvas, e também terá uma função para editar as tarefas.
+                </p>
+              </div>
+              <div class="box-btn">
+                <a
+                  target="_blank"
+                  href="https://github.com/Erick-Rosdachimo/task-list"
+                  class="btn"
+                  >Github</a
+                >
+                <a
+                  target="_blank"
+                  href="https://erick-rosdachimo.github.io/task-list"
                   class="btn"
                   >Ver Projeto</a
                 >
